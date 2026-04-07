@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>安礽的個人網站</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <p class="hero-subtitle">安礽的個人網站</p>
+            <h1>在探索中找到方向</h1>
+            <p class="hero-text"></p>
+            <p class="en">Go ahead, make my day.</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#home">首頁</a>
+        <a href="#about">關於我</a>
+        <a href="#growth">多元營隊</a>
+        <a href="#photos">攝影作品</a>
+    </nav>
+
+    <section id="about" class="intro">
+        <h2 class="section-title">關於我</h2>
+        <div class="intro-box">
+            <p>
+                我是來自台北的高中生，喜歡的運動是滑雪與打羽球，對資訊與科技有興趣，平時喜歡透過攝影記錄生活，也樂於與他人交流互動。
+                在高二時，我曾對未來方向感到迷惘，因此透過製作這個網站，重新整理自己的學習歷程、營隊經驗與興趣發展。
+                在回顧的過程中，我發現自己對資訊、實作與影像表達的熱情，也希望藉由這個網站，呈現我一路累積的成長與探索。
+            </p>
+        </div>
+    </section>
+
+    <section id="growth" class="growth">
+        <h2 class="section-title">我的多元營隊</h2>
+
+        <div class="growth-item">
+            <div class="image-box">
+                <img src="images/camp1.jpg" alt="Minecraft X python 程式營">
+            </div>
+            <div class="text">
+                <h2>Minecraft X python 程式營</h2>
+                <p>
+                    在國小時期報名參與 Minecraft X python 程式營，透過遊戲實際感受 python 程式，
+                    使用 Python 控制 Minecraft 中的角色與環境，例如透過程式自動建造方塊、改變地形，
+                    讓我初步建立對程式設計的基本認知，也對資訊領域產生了濃厚的興趣。雖然當時只停留在入門，
+                    但這份好奇心延續至今，讓我在高中選擇進一步接觸網頁設計與 C++，
+                    並持續探索資訊領域的更多可能性。
+                </p>
+            </div>
+        </div>
+
+        <div class="growth-item">
+            <div class="image-box">
+                <img src="images/camp2.jpg" alt="無人機科學營" class="rotate">
+            </div>
+            <div class="text">
+                <h2>無人機科學營</h2>
+                <p>
+                    也是在國小報名參加的營隊，課程內容主要是先透過樂高拼湊出無人機的外型，
+                    並與老師學習主機板的程式設計，與如何接線控制無人機的飛行，
+                    並在結束後自行體驗無人機的飛行。這個活動製作了屬於自己的無人機，
+                    讓國小的我對程式設計有了興趣，並且激發了我對科技的熱情。
+                </p>
+            </div>
+        </div>
+
+        <div class="growth-item">
+            <div class="image-slider">
+                <img src="images/camp5.jpg" class="slide active" alt="多元營隊照片1">
+                <img src="images/camp8.jpg" class="slide" alt="多元營隊照片2">
+                <img src="images/camp3.jpg" class="slide" alt="多元營隊照片3">
+                <img src="images/camp9.jpg" class="slide" alt="多元營隊照片4">
+                <img src="images/camp6.jpg" class="slide" alt="多元營隊照片5">
+                <img src="images/camp7.jpg" class="slide" alt="多元營隊照片6">
+
+                <button class="prev" type="button">‹</button>
+                <button class="next" type="button">›</button>
+            </div>
+
+            <div class="text">
+                <h2>多元營隊參與紀錄</h2>
+                <p>
+                    從小的我就對新事物不排斥，也很喜歡電腦與手作，因此常常利用寒暑假時間體驗各式各樣的營隊。
+                    不同的活動帶給我不同的收穫，有的讓我對資訊產生興趣，有的讓我更喜歡動手實作，
+                    有的則讓我在團體互動中學會交流與合作。這些經驗共同構成了我成長過程中重要的一部分。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="photos" class="photography">
+        <h2 class="section-title">攝影作品集</h2>
+        <p class="photo-intro">
+            我很喜歡透過鏡頭記錄景色細節與畫面，也喜歡在拍攝過程中觀察光影變化與構圖
+            ，從中找到美感與創意的表達方式，雖然我的構圖與手法並不是專業的，但我很享受能拍到我認為好看的
+            照片。
+        </p>
+
+        <div class="photo-slider" id="photoSlider"></div>
+        <div class="photo-dots" id="photoDots"></div>
+    </section>
+
+    <footer>
+        <p>© 2024 sunney</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

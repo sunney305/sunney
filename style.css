@@ -1,0 +1,364 @@
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    color: #222;
+    background: linear-gradient(to right, #eef2f3, #ffffff);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.en {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    letter-spacing: 3px;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* 首頁 */
+.hero {
+    background: linear-gradient(135deg, #1e1e2f, #252542);
+    color: white;
+    text-align: center;
+    padding: 90px 20px 70px;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-size: 64px;
+    margin: 15px 0;
+    line-height: 1.2;
+}
+
+.hero-text {
+    font-size: 22px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #e4e4f0;
+}
+
+/* 導覽列 */
+nav {
+    background: #2c2c3e;
+    padding: 14px 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: #e0e0e0;
+    margin: 0 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #7db8ff;
+}
+
+/* 通用區塊 */
+section {
+    padding: 80px 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 46px;
+    margin-bottom: 40px;
+}
+
+/* 關於我 */
+.intro {
+    background: #f8f9fb;
+}
+
+.intro-box {
+    max-width: 950px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px 45px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.intro-box p {
+    font-size: 22px;
+    line-height: 2;
+    margin: 0;
+    text-align: left;
+    color: #444;
+}
+
+/* 營隊 */
+.growth {
+    background-color: #f2f4f7;
+}
+
+.growth-item {
+    max-width: 1150px;
+    margin: 0 auto 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 75px;
+}
+
+.image-box,
+.image-slider {
+    width: 380px;
+    height: 450px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+}
+
+.rotate {
+    transform: rotate(-90deg);
+    max-width: 450px;
+    max-height: 380px;
+}
+
+/* 營隊輪播 */
+.image-slider {
+    position: relative;
+    overflow: hidden;
+    border-radius: 14px;
+    background: white;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+}
+
+.image-slider .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: none;
+    border-radius: 12px;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.image-slider .slide.active {
+    display: block;
+}
+
+.image-slider:hover .slide.active {
+    transform: scale(1.04);
+    filter: brightness(1.06);
+}
+
+.image-slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.45);
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.image-slider button:hover {
+    transform: translateY(-50%) translateY(-5px) scale(1.08);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.image-slider .prev {
+    left: 12px;
+}
+
+.image-slider .next {
+    right: 12px;
+}
+
+/* 文字 */
+.text {
+    width: 560px;
+}
+
+.text h2 {
+    font-size: 36px;
+    margin: 0 0 24px 0;
+    line-height: 1.3;
+}
+
+.text p {
+    font-size: 22px;
+    line-height: 1.95;
+    color: #555;
+    margin: 0;
+    text-align: left;
+}
+
+/* 攝影 */
+.photography {
+    background: rgb(224, 240, 250);
+}
+
+.photo-intro {
+    max-width: 900px;
+    margin: 0 auto 30px;
+    text-align: center;
+    font-size: 21px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.photo-slider {
+    position: relative;
+    max-width: 980px;
+    height: 580px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.14);
+    background: #ddd;
+}
+
+.photo-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.photo-slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.photo-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    display: block;
+    transform: scale(1);
+    transition: transform 5s ease;
+}
+
+.photo-slide.active img {
+    transform: scale(1.05);
+}
+
+.photo-dots {
+    text-align: center;
+    margin-top: 18px;
+    padding: 0 12px;
+}
+
+.photo-dots .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 4px;
+    border-radius: 50%;
+    background: #bbb;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.photo-dots .dot.active {
+    background: #2c2c3e;
+    transform: scale(1.25);
+}
+
+/* 頁尾 */
+footer {
+    background: #1e1e2f;
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+}
+
+/* 手機版 */
+@media (max-width: 900px) {
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-text {
+        font-size: 18px;
+    }
+
+    .section-title {
+        font-size: 34px;
+    }
+
+    .intro-box {
+        padding: 28px 24px;
+    }
+
+    .intro-box p {
+        font-size: 18px;
+    }
+
+    .growth-item {
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 70px;
+    }
+
+    .image-box,
+    .image-slider {
+        width: 300px;
+        height: 360px;
+    }
+
+    .text {
+        width: 100%;
+        max-width: 650px;
+    }
+
+    .text h2 {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .text p {
+        font-size: 18px;
+    }
+
+    .photo-slider {
+        height: 360px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px 10px;
+    }
+}
