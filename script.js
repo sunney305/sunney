@@ -1,4 +1,3 @@
-// ===== 營隊輪播 =====
 const campSlides = document.querySelectorAll(".image-slider .slide");
 const nextBtn = document.querySelector(".image-slider .next");
 const prevBtn = document.querySelector(".image-slider .prev");
@@ -35,7 +34,8 @@ if (photoSlider && photoDots) {
         if (i === 1) slide.classList.add("active");
 
         const img = document.createElement("img");
-        img.src = `images/photo${i}.jpg`;
+        // 【修正點】：把原本的 images/ 刪掉，因為你的照片直接放 GitHub 最外層
+        img.src = `photo${i}.jpg`; 
         img.alt = `攝影作品${i}`;
 
         slide.appendChild(img);
